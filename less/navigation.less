@@ -1,1 +1,59 @@
 // Navigation Styles here
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 50%;
+    margin: 0 auto 30px;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+     }
+   
+    .logoFunBus{
+      @media screen {
+       padding-bottom: 15px;
+      }
+      
+    }
+
+    a {
+        color: @shark;
+        width: 30%;
+        text-decoration: none;
+        justify-content: space-evenly;
+        padding-left:40px;
+        
+        @media @mobile {
+            justify-content: space-evenly;
+            align-content: space-between;
+            width: 100%;
+            padding:25px;
+          }
+    }
+   
+  }
+  
+  .imgHeader{
+    display: block;
+    padding: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+    border-top: 2px dashed @navigation-border;
+
+   @media @mobile {
+             width: 85%;
+          }
+   
+}
+
+
